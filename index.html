@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<!-- bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Title</title>
+</head>
+<body>
+
+<!-- top-section -->
+    <div class="container top-section">
+        <div class="row justify-content-around">
+            <div class="card text-center m-auto">
+                <p>ALLOW MORE</p>
+                <div class="row justify-content-around align-items-center">
+                    <div class="box">
+                        <i class="fas fa-globe"></i>
+                        <p>website</p>
+                    </div>
+                    <hr>
+                    <div class="box">
+                        <i class="fas fa-cube"></i>
+                        <p>category</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-auto">
+                <p>Block More</p>
+                <div class="row justify-content-around align-items-center">
+                    <div class="box">
+                        <i class="fas fa-globe"></i>
+                        <p>website</p>
+                    </div>
+                    <hr>
+                    <div class="box">
+                        <i class="fas fa-cube"></i>
+                        <p>category</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 add-section">
+            <a href="#"><i class="fas fa-plus-circle d-block"></i></a>
+            <a href="#"><p >Add new filter policy</p></a>
+        </div>
+    </div>
+
+
+    <!-- accordions -->
+
+
+<!-- default-policy -->
+
+    <div class="container">
+        <p class="label">Level-Override</p>
+        <div class="row">
+            
+            <div class="col accordion-wraper">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title m-0">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="row accordion-head align-items-center">
+                                        <div class="col-3">
+                                            <h1>Default Policy</h1>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Devices</span>
+                                            <p>All Devices</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Filter Actions</span>
+                                            <p>Policy Categories</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Time Group</span>
+                                            <p>Applies all the time</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <div class="row accordion-body">
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-danger btn-sm m-1">Disable</button>
+                                        <select class="btn btn-outline-primary btn-sm m-1">
+                                            <option selected>More</option>
+                                            <option value="1">Stream</option>
+                                            <option value="2">Delete</option>
+                                            <option value="3">Swap</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>If enabled, this default policy applies to all company devices.</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p class="mb-2">There are fifteen allowed categories and seven blocked categories in this policy.</p>
+                                        <p>Categories and websites added from the Quick Actions menu above are saved in this policy</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>No time group is specified on this policy; this policy is in effect at all times.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- computer-policy -->
+    <div class="container">
+        <p class="label">Level-Standard</p>
+        <div class="row">
+            <div class="col accordion-wraper">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title m-0">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <div class="row accordion-head align-items-center">
+                                        <div class="col-3">
+                                            <h1>Computer Policy</h1>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Devices</span>
+                                            <p>Computers</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Filter Actions</span>
+                                            <p>Computer Categories</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Time Group</span>
+                                            <p><span class="diff-color">(Not)</span> Business Hours</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <div class="row accordion-body">
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-danger btn-sm m-1">Disable</button>
+                                        <select class="btn btn-outline-primary btn-sm m-1">
+                                            <option selected>More</option>
+                                            <option value="1">Stream</option>
+                                            <option value="2">Delete</option>
+                                            <option value="3">Swap</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>If enabled, this default policy applies to all company devices.</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>Fifteen categories are allowed and seven categories are blocked by this policy. This policy also contains two advanced filter actions.</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>No time group is specified on this policy; this policy is in effect at all times.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- Phones Policy -->
+                <div class="panel-group mt-3" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title m-0">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div class="row accordion-head align-items-center">
+                                        <div class="col-3">
+                                            <button class="disabled-btn">Disabled</button>
+                                            <h1>Phones Policy</h1>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Devices</span>
+                                            <p>Mobile Devices</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Filter Actions</span>
+                                            <p>Phone Categories</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <span>Time Group</span>
+                                            <p>Applies all the time</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="row accordion-body">
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-danger btn-sm m-1">Disable</button>
+                                        <select class="btn btn-outline-primary btn-sm m-1">
+                                            <option selected>More</option>
+                                            <option value="1">Stream</option>
+                                            <option value="2">Delete</option>
+                                            <option value="3">Swap</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>If enabled, this default policy applies to all company devices.</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>Fifteen categories are allowed and seven categories are blocked by this policy. This policy also contains two advanced filter actions.</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>No time group is specified on this policy; this policy is in effect at all times.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- last computer-policy -->
+<div class="container pb-5">
+    <p class="label">Level-Foundation</p>
+    <div class="row">
+        <div class="col accordion-wraper">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title m-0">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <div class="row accordion-head align-items-center">
+                                    <div class="col-3">
+                                        <button class="required-btn disabled-btn">Required</button>
+                                        <h1>Computer Policy</h1>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Devices</span>
+                                        <p>Computers</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Filter Actions</span>
+                                        <p>Computer Categories</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Time Group</span>
+                                        <p><span class="diff-color">(Not)</span> Business Hours</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            <div class="row accordion-body">
+                                <div class="col-3">
+                                    <button class="btn btn-outline-danger btn-sm m-1">Disable</button>
+                                    <select class="btn btn-outline-primary btn-sm m-1">
+                                        <option selected>More</option>
+                                        <option value="1">Stream</option>
+                                        <option value="2">Delete</option>
+                                        <option value="3">Swap</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <p>If enabled, this default policy applies to all company devices.</p>
+                                </div>
+                                <div class="col-3">
+                                    <p>Fifteen categories are allowed and seven categories are blocked by this policy. This policy also contains two advanced filter actions.</p>
+                                </div>
+                                <div class="col-3">
+                                    <p>No time group is specified on this policy; this policy is in effect at all times.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<script src="js/jquery-slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
